@@ -499,6 +499,7 @@ public class DatePicker extends FrameLayout {
         mNumberOfMonths = mTempDate.getActualMaximum(Calendar.MONTH) + 1;
         mShortMonths = new String[mNumberOfMonths];
         for (int i = 0; i < mNumberOfMonths; i++) {
+            // 根据设备信息，生成合适的月份字符串
             mShortMonths[i] = DateUtils.getMonthString(Calendar.JANUARY + i,
                     DateUtils.LENGTH_MEDIUM);
         }
